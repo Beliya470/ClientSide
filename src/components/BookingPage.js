@@ -182,14 +182,21 @@ const handleBookingSubmission = async (event) => {
         {bookingRoomId === room.id ? (
           <>
             <div className="date-picker-container">
-              <DatePicker
+            <DatePicker
+              selected={startDate}
+              onChange={handleDateChange}
+              startDate={startDate}
+              inline
+            />
+
+              {/* <DatePicker
                 selected={startDate}
                 onChange={handleDateChange}
                 startDate={startDate}
                 endDate={endDate}
                 selectsRange
                 inline
-              />
+              /> */}
               <button onClick={confirmDates} className="confirm-dates-button">Select Dates</button>
             </div>
             {showBookingForm && (
@@ -278,7 +285,6 @@ const handleBookingSubmission = async (event) => {
         </div>
       </section>
 
-      
 
 
       <footer className="footer">
