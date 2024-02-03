@@ -1,6 +1,54 @@
 /* src/index.css or your main CSS file */
 @import "~font-awesome/css/font-awesome.css";
 
+/* Existing styles */
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .guest-rooms-container,
+  .hotel-info-images,
+  .hotel-features {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack elements vertically */
+  }
+
+  .room-card,
+  .feature {
+    margin: 0 auto; /* Center-align the room cards and features */
+    max-width: 90%; /* Limit maximum width */
+  }
+
+  .hotel-info-section .hotel-info-content,
+  .hotel-info-section .hotel-info-images img {
+    width: 100%; /* Full width for better readability */
+    padding: 0 20px; /* Add some padding */
+  }
+
+  .subscription-section button,
+  .hotel-footer .btn-primary {
+    width: 100%; /* Full width buttons */
+    margin-top: 10px;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  header h1,
+  .hotel-info-content h1,
+  .guest-rooms-section header h2 {
+    font-size: 1.5em; /* Smaller headings for mobile */
+  }
+
+  .room-info h3 {
+    font-size: 1.2em; /* Adjust room title size */
+  }
+
+  .room-info p,
+  .hotel-description,
+  .feature p {
+    font-size: 0.9em; /* Smaller text for readability */
+  }
+}
 
 /* HomePage styles */
 .home-page header {
