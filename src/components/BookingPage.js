@@ -27,7 +27,7 @@ function BookingPage() {
   const navigate = useNavigate();
 
 
-  const API_URL = 'http://localhost:8000'; // Backend API URL
+  const API_URL = 'https://easydine2024-8.onrender.com'; // Backend API URL
   const [showBookingForm, setShowBookingForm] = useState(false);
  
 
