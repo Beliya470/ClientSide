@@ -52,3 +52,26 @@
   text-align: center;
   color: white; /* Text color */
 }
+/* Adjustments for tablets */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack links vertically */
+      padding: 10px;
+  }
+  .nav-link {
+      margin: 5px 0; /* Adjust margin for vertical stacking */
+  }
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 480px) {
+  .navbar {
+      flex-direction: column;
+      padding: 5px;
+  }
+  .nav-link {
+      width: 100%; /* Make links full width */
+      margin: 5px 0; /* Adjust margin for tighter space */
+      justify-content: center; /* Ensure text is centered */
+  }
+}
